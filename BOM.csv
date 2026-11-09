@@ -1,15 +1,16 @@
-Part,Qty,Unit,Total,Vendor
-NE555P (DIP-8 timer),1,0.54,0.54,DigiKey
-CD74HC4017E (DIP-16 decade counter),1,0.95,0.95,DigiKey
-SN74HC02N (DIP-14 quad NOR),2,0.50,1.00,DigiKey
-SN74HC08N (DIP-14 quad AND),3,0.50,1.50,DigiKey
-SN74HC32N (DIP-14 quad OR),2,0.50,1.00,DigiKey
-DIP-8 IC socket,1,0.30,0.30,DigiKey
-DIP-14 IC socket,7,0.35,2.45,DigiKey
-DIP-16 IC socket,1,0.40,0.40,DigiKey
-1N4148 diode,3,0.10,0.30,DigiKey
-5mm LED (red/yellow/green),3,0.15,0.45,DigiKey
-6mm THT tactile push button,4,0.30,1.20,DigiKey
-1/4W THT resistor (assorted values),10,0.10,1.00,DigiKey
-THT ceramic/electrolytic capacitor,2,0.20,0.40,DigiKey
-"Custom PCB, 2-layer, 5 pcs",1,2.00,2.00,JLCPCB
+Part,Purpose,Qty,Price,Total,Vendor,Link
+NE555P (DIP-8 timer),Astable oscillator - generates the fast clock that drives the random counter,1,0.59,0.59,DigiKey,https://www.digikey.com/en/products/detail/texas-instruments/NE555P/277057
+CD74HC4017E (DIP-16 decade counter),Clocked by the 555; whichever output is active when Arm is pressed is the computer's pick,1,0.96,0.96,DigiKey,https://www.digikey.com/en/products/detail/texas-instruments/CD74HC4017E/480317
+SN74HC02N (DIP-14 quad NOR),Wired as SR latches to capture the player's button and the counter's state on Arm press,2,0.57,1.14,DigiKey,https://www.digikey.com/en/products/detail/texas-instruments/SN74HC02N/277210
+SN74HC08N (DIP-14 quad AND),Implements the win/lose/tie Boolean comparison between player and computer picks,3,0.57,1.71,DigiKey,https://www.digikey.com/en/products/detail/texas-instruments/SN74HC08N/277216
+SN74HC32N (DIP-14 quad OR),Combines the AND terms into the final Win/Lose/Tie outputs,2,0.59,1.18,DigiKey,https://www.digikey.com/en/products/detail/texas-instruments/SN74HC32N/277235
+DIP-8 IC socket,Socket for U1 (NE555) so it isn't soldered directly to the board,1,0.56,0.56,DigiKey,https://www.digikey.com/en/products/detail/cnc-tech/243-08-1-03/3441568
+DIP-14 IC socket,Sockets for the 14-pin logic ICs U3-U9,7,0.60,4.20,DigiKey,https://www.digikey.com/en/products/detail/cnc-tech/243-14-1-03/3441569
+DIP-16 IC socket,Socket for U2 (CD4017),1,0.65,0.65,DigiKey,https://www.digikey.com/en/products/detail/cnc-tech/243-16-1-03/3441570
+1N4148 diode,Diode-ORs the latched button signals into a single reveal trigger,3,0.10,0.30,DigiKey,https://www.digikey.com/en/products/detail/diotec-semiconductor/1N4148/13164514
+"5mm LED (25-pack, only 3 used)",Win / Lose / Tie result indicators,1,2.95,2.95,DigiKey,https://www.digikey.com/en/products/detail/sparkfun-electronics/COM-09856/17828173
+6mm THT tactile push button,Rock / Paper / Scissors picks plus the Arm (power-on/start) button,4,0.36,1.44,DigiKey,https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3F-1025/368358
+1/4W THT resistor (assorted values),"Current-limiting for LEDs, pull-downs on latch/button inputs, oscillator timing",10,0.10,1.00,DigiKey,https://www.digikey.com/en/products/detail/yageo/CFR-25JT-52-100R/9098530
+C1 - 10uF electrolytic capacitor,555 timing capacitor; sets the oscillator frequency with R1/R2,1,0.10,0.10,DigiKey,https://www.digikey.com/en/products/detail/panasonic-electronic-components/ECA-1CM100B/14301375
+C2 - 0.1uF ceramic capacitor,Power supply decoupling,1,0.15,0.15,DigiKey,https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/A104K15X7RF5UAA/8557341
+"Custom PCB (2-layer, 5 pcs)",Fabricated board routed from the KiCad design,1,2.00,2.00,JLCPCB,https://jlcpcb.com/quote
