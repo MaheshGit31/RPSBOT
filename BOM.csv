@@ -1,0 +1,15 @@
+Part,Qty,Unit,Total,Vendor
+NE555P (DIP-8 timer),1,0.54,0.54,DigiKey
+CD74HC4017E (DIP-16 decade counter),1,0.95,0.95,DigiKey
+SN74HC02N (DIP-14 quad NOR),2,0.50,1.00,DigiKey
+SN74HC08N (DIP-14 quad AND),3,0.50,1.50,DigiKey
+SN74HC32N (DIP-14 quad OR),2,0.50,1.00,DigiKey
+DIP-8 IC socket,1,0.30,0.30,DigiKey
+DIP-14 IC socket,7,0.35,2.45,DigiKey
+DIP-16 IC socket,1,0.40,0.40,DigiKey
+1N4148 diode,3,0.10,0.30,DigiKey
+5mm LED (red/yellow/green),3,0.15,0.45,DigiKey
+6mm THT tactile push button,4,0.30,1.20,DigiKey
+1/4W THT resistor (assorted values),10,0.10,1.00,DigiKey
+THT ceramic/electrolytic capacitor,2,0.20,0.40,DigiKey
+"Custom PCB, 2-layer, 5 pcs",1,2.00,2.00,JLCPCB
