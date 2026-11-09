@@ -21,3 +21,7 @@ A rock-paper-scissors machine built with no microcontroller and, no firmware.
 
 - `rps_logic.kicad_sch` / `rps_logic.kicad_pro` — schematic
 - `rps_logic.kicad_pcb` — routed PCB 
+
+## Images
+<img width="2000" height="1415" alt="image" src="https://github.com/user-attachments/assets/9fca4a01-d139-4290-b529-d2a61d83c7b4" />
+<img width="1800" height="1273" alt="image" src="https://github.com/user-attachments/assets/74a7b6cb-fecf-472f-a789-979dcced5e30" />
